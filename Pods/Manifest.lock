@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (5.10.2)
+  - Kingfisher (8.1.2)
+  - SDWebImage (5.20.0):
+    - SDWebImage/Core (= 5.20.0)
+  - SDWebImage/Core (5.20.0)
+  - SwiftyJSON (5.0.2)
+  - youtube-ios-player-helper (1.0.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - SDWebImage
+  - SwiftyJSON
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - SDWebImage
+    - SwiftyJSON
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
+  Kingfisher: dc989619594e24713c83e5a98f89f08850e0c529
+  SDWebImage: 73c6079366fea25fa4bb9640d5fb58f0893facd8
+  SwiftyJSON: f5b1bf1cd8dd53cd25887ac0eabcfd92301c6a5a
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
+
+PODFILE CHECKSUM: 6f99ac417b731e11dda57d6e78eaef82920064a8
+
+COCOAPODS: 1.16.2
