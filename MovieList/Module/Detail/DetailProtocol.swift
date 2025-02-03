@@ -12,27 +12,23 @@ protocol VTPDetailProtocol: AnyObject {
     var interactor: PTIDetailProtocol? { get set }
     var router: PTRDetailProtocol? { get set }
   
-//  func getVideoDetails(movieId: Int, key: String)
-  func getMovieTrailer(key: String, query: String)
+  func getVideoDetails(movieId: Int, key: String)
 }
 
 protocol PTVDetailProtocol: AnyObject {
-  func successGetMovieTrailer(videoElement: VideoElement)
-//  func successGetVideoDetails(videoURL: String)
+  func successGetVideoDetails(videoURL: String)
   func failedGet(message: String)
 }
   
 
 protocol PTIDetailProtocol: AnyObject {
     var presenter: ITPDetailProtocol? { get set }
-//  func getVideoDetails(movieId: Int, key: String)
-  func getMovieTrailer(key: String, query: String)
+  func getVideoDetails(movieId: Int, key: String)
 }
 
 
 protocol ITPDetailProtocol: AnyObject {
-//  func onSuccessGetVideoURL(videoURL: String)
-  func onSuccessGetMovieTrailer(videoElement: VideoElement)
+  func onSuccessGetVideoURL(videoURL: String)
   func onFailedGet(message: String)
 }
 protocol PTRDetailProtocol: AnyObject {

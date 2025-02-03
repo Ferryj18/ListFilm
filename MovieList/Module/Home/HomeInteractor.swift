@@ -38,7 +38,7 @@ class HomeInteractor: PTIHomeProtocol  {
         AF.request(apiUrl, method: .get, parameters: parameters).responseJSON { response in
             switch response.result {
             case .success(let value):
-//                print("Response Data: \(value)")
+                print("Response Data: \(value)")
                 let json = JSON(value)
                 do {
                     let movieResponse = try json["results"].rawData()

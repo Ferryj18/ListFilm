@@ -8,12 +8,6 @@
 import UIKit
 
 class DetailPresenter: VTPDetailProtocol {
-  func getMovieTrailer(key: String, query: String) {
-    interactor?.getMovieTrailer(key: key, query: query)
-  }
-  
-
-  
     
     //MARK: - Property DetailNewsPresenter
     var view: PTVDetailProtocol?
@@ -28,22 +22,18 @@ class DetailPresenter: VTPDetailProtocol {
         self.viewController = viewController
     }
     
-//    func getVideoDetails(movieId: Int, key: String) {
-//      interactor?.getVideoDetails(movieId: movieId, key: key)
-//  }
-//    
+    func getVideoDetails(movieId: Int, key: String) {
+      interactor?.getVideoDetails(movieId: movieId, key: key)
+  }
+    
     
 }
 
 //MARK: - Extension DetailNewsPresenter
 extension  DetailPresenter : ITPDetailProtocol {
-  func onSuccessGetMovieTrailer(videoElement: VideoElement) {
-    view?.successGetMovieTrailer(videoElement: videoElement)
+  func onSuccessGetVideoURL(videoURL: String) {
+      view?.successGetVideoDetails(videoURL: videoURL) // Pass the video URL to the view
   }
-  
-//  func onSuccessGetVideoURL(videoURL: String) {
-//      view?.successGetVideoDetails(videoURL: videoURL) // Pass the video URL to the view
-//  }
 func onFailedGet(message: String) {
  view?.failedGet(message: message)
 }
